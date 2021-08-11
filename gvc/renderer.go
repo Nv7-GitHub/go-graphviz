@@ -460,7 +460,7 @@ func libraryShape(job *ccall.GVJ, name string, a []ccall.Pointf, filled int) {
 }
 
 func init() {
-	ccall.BeginJob = beginJob
+	/*ccall.BeginJob = beginJob
 	ccall.EndJob = endJob
 	ccall.BeginGraph = beginGraph
 	ccall.EndGraph = endGraph
@@ -489,5 +489,5 @@ func init() {
 	ccall.Beziercurve = beziercurve
 	ccall.Polyline = polyline
 	ccall.Comment = comment
-	ccall.LibraryShape = libraryShape
+	ccall.LibraryShape = libraryShape*/
 }

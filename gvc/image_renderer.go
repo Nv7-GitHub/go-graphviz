@@ -9,9 +9,7 @@ import (
 
 	"github.com/fogleman/gg"
 	"github.com/goccy/go-graphviz/internal/ccall"
-	"github.com/golang/freetype/truetype"
 	"golang.org/x/image/font"
-	"golang.org/x/image/font/gofont/goregular"
 )
 
 type ImageRenderer struct {
@@ -235,7 +233,7 @@ func SetFontFace(fn func(size float64) (font.Face, error)) {
 }
 
 func init() {
-	imgRenderer = &ImageRenderer{}
+	/*imgRenderer = &ImageRenderer{}
 	imgRenderer.SetFontFace(func(size float64) (font.Face, error) {
 		ft, err := truetype.Parse(goregular.TTF)
 		if err != nil {
@@ -252,5 +250,5 @@ func init() {
 		return truetype.NewFace(ft, opt), nil
 	})
 	RegisterRenderer("png", imgRenderer)
-	RegisterRenderer("jpg", imgRenderer)
+	RegisterRenderer("jpg", imgRenderer)*/
 }

@@ -1183,5 +1183,5 @@ func Agerr(msg string) {
 }
 
 func init() {
-	C.agseterr(C.AGMAX)
+	//C.agseterr(C.AGMAX)
 }
